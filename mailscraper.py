@@ -6,7 +6,7 @@ import argparse
 
 def scrape_emails(url):
     # Send a GET request to the website
-    response = requests.get(url)
+    response = requests.get(url, verify=False)
     
     # Check if the request was successful
     if response.status_code == 200:
